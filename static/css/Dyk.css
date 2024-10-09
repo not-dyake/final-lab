@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HOME CSS*/
+.home-frame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(43, 40, 40);
+    height: 100vh;
+}
+
+.front-greet{
+    font-size: 100px;
+    color: white;
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
+/* PROFILE CSS */
+.frame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(43, 40, 40);
+    font-family: Arial, sans-serif;
+}
+
+.image img{
+    width: 240px;
+    height: 240px;
+    position: relative;
+}
+
+.id-info{
+    padding: 12px;
+    width: 300px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+
+.univ-address{
+    font-size: 10px;
+}
+
+.name{
+    color: blue;
+    background-color: yellow;
+    border-radius: 5px;
+}
+
+.course{
+    width: 100%;
+    color: yellow;
+    background-color: blue;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+
+/* SETTINGS CSS */
+.settings-frame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(43, 40, 40);
+    height: 100vh;
+}
+
+.btn{
+    background-color: white;
+    padding: 10px;
+}
+
+
+
+
+/* NAVBAR CSS */
+.nav{
+    width: 100%;
+    height: 100%;
+}
+
+.side-nav{
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 30px 30px;
+    background: rgb(212, 206, 206);
+    backdrop-filter: blur(10px);
+}
+
+ul{
+    list-style: none;
+    padding: 0 20px;
+}
+
+ul li{
+    margin: 40px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+ul li a{
+    text-decoration: none;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+ul li i{
+    margin-right: 30px;
+}
+
+.brand-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav-brand-name{
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
