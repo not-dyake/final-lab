@@ -29,11 +29,11 @@ class AdminLoginView(FormView):
         user = authenticate(self.request, username=username, password=password)
         if user is not None and user.is_staff:
             login(self.request, user)
-            return redirect('admin_dashboard')  # Redirect to admin dashboard
+            return redirect('admin_dashboard') 
         else:
             return render(self.request, self.template_name, {'form': form, 'error': 'Invalid credentials or not an admin.'})
 
-# Ensure only logged-in users can access the dashboard
+
 @method_decorator(login_required, name='dispatch')
 class AdminDashboardView(LoginRequiredMixin, TemplateView):
     template_name = 'app/admin_dashboard.html'
