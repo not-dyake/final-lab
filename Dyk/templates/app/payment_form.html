@@ -1,0 +1,13 @@
+{% extends 'app/base.html' %}
+{% block content %}
+<div class="home-frame">
+    <div class="form-container">
+        <h2 class="form-title">Payment</h2>
+        <form method="post" class="styled-form">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn-submit">Make Payment</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

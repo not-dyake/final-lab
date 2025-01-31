@@ -1,0 +1,23 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block content %}
+<div class="home-frame">
+    <div class="form-container">
+        <h2 class="form-title">Admin Login</h2>
+        <form method="post" class="styled-form">
+            {% csrf_token %}
+            <label for="id_username">Username:</label>
+            <input type="text" name="username" id="id_username" required>
+
+            <label for="id_password">Password:</label>
+            <input type="password" name="password" id="id_password" required>
+
+            <button type="submit" class="btn-submit">Login</button>
+        </form>
+
+        {% if error %}
+        <p style="color: red; margin-top: 10px;">{{ error }}</p>
+        {% endif %}
+    </div>
+</div>
+{% endblock content %}

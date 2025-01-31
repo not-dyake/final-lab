@@ -1,0 +1,19 @@
+{% extends 'app/base.html' %}
+
+{% block content %}
+<div class="home-frame">
+    <div class="form-container">
+        <h2 class="form-title">Update Resident Information</h2>
+        <form class="styled-form" method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="btn-submit" type="submit">Update</button>
+        </form>
+        <div class="back">
+            <a class="btn-submit" href="{% url 'admin_dashboard' %}">Back</a>
+        </div>
+            
+    </div>
+</div>
+
+{% endblock %}

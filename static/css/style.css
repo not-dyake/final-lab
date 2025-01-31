@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+}
+
+
+/* NAVBAR CSS */
+.nav{
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 30px 30px;
+    background: rgb(212, 206, 206);
+    backdrop-filter: blur(10px);
+}
+
+ul{
+    list-style: none;
+    padding: 0 20px;
+}
+
+ul li{
+    margin: 40px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+ul li a{
+    text-decoration: none;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+ul li i{
+    margin-right: 30px;
+}
+
+.brand-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav-brand-name{
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+/* HOME CSS*/
+.home-frame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(43, 40, 40);
+    height: 100vh;
+    color: white;
+    margin-left: 260px;
+}
+
+.front-greet{
+    font-size: 100px;
+    color: white;
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.register{
+    margin-left: 30%;
+}
+
+/* Resident List*/
+.resident-list {
+    text-align: center;
+    color: white;
+    width: 30%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(212, 206, 206);
+    border-radius: 10px;
+}
+
+.resident-list h1 {
+    margin-bottom: 30px;
+    font-family: "Satisfy", cursive;
+    font-size: 50px;
+    color: black;
+}
+
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: "Bebas Neue", sans-serif;
+    color: white;
+    background-color: rgb(70, 70, 70);
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.resident-ul {
+    list-style: none;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.resident-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    font-family: "Bebas Neue", sans-serif;
+    color: black;
+}
+
+.resident-item span {
+    flex-grow: 1;
+}
+
+.btn-edit {
+    background-color: rgb(70, 130, 180);
+}
+
+.btn-edit:hover {
+    background-color: rgb(100, 170, 230);
+}
+
+.btn-delete {
+    background-color: rgb(180, 70, 70);
+}
+
+.btn-delete:hover {
+    background-color: rgb(230, 100, 100);
+}
+
+
+/* Form Container Styles */
+.form-container {
+    width: 30%;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: rgb(212, 206, 206);
+    border-radius: 10px;
+    text-align: center;
+    color: black;
+}
+
+.form-title {
+    font-size: 50px;
+    font-family: "Satisfy", cursive;
+    margin-bottom: 20px;
+    color: black;
+}
+
+/* RESIDENT FORM */
+.styled-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.styled-form label {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.styled-form input,
+.styled-form textarea,
+.styled-form select {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: rgb(43, 40, 40);
+    color: white;
+    outline: none;
+}
+
+.styled-form input:focus, 
+.styled-form textarea:focus, 
+.styled-form select:focus {
+    border-color: rgb(70, 130, 180);
+    box-shadow: 0 0 5px rgb(70, 130, 180);
+}
+
+
+
+.btn-submit {
+    text-decoration: none;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    color: white;
+    background-color: rgb(70, 70, 70);
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: white;
+    color: black;
+}
+
+
+.dashboard-container{
+    width: 30%;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: rgb(212, 206, 206);
+    border-radius: 10px;
+    text-align: center;
+    color: black;
+}
+
+.section-title{
+    font-family: "Satisfy", cursive;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.resident-table {
+    display: flex;
+    justify-content: center;
+    
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Table Header Styles */
+thead {
+    background-color: #4CAF50;
+    color: white;
+}
+
+th {
+    padding: 12px;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Table Body Styles */
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #ddd;
+}
+
+/* Table Cell Styles */
+td {
+    padding: 12px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Button Styles */
+.btn-edit, .btn-delete {
+    padding: 8px 12px;
+    margin: 0 5px;
+    text-decoration: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+}
+
+.btn-edit {
+    background-color: #4CAF50;
+}
+
+.btn-edit:hover {
+    background-color: #45a049;
+}
+
+.btn-delete {
+    background-color: #f44336;
+}
+
+.btn-delete:hover {
+    background-color: #da190b;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    th, td {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .btn-edit, .btn-delete {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+}
+
+.back{
+    padding-top: 20px;
+}

@@ -56,8 +56,10 @@ ROOT_URLCONF = 'Salalila.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR/ 'templates'],
-        'APP_DIRS': True,
+        'DIRS': [
+            BASE_DIR / 'templates',  # Look in the global templates folder
+        ],
+        'APP_DIRS': True,  # Look in the app's templates folder
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
@@ -123,3 +125,13 @@ STATICFILES_DIRS =  [BASE_DIR/ 'static']
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+]
+
+LOGIN_URL = 'admin_login'
+LOGIN_REDIRECT_URL = 'admin_page'
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'

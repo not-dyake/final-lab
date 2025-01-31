@@ -1,0 +1,13 @@
+{% extends 'app/base.html' %}
+{% block content %}
+<div class="home-frame">
+    <div class="form-container">
+        <h2 class="form-title">Upload Document</h2>
+        <form method="post" enctype="multipart/form-data" class="styled-form">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn-submit">Upload</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

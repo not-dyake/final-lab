@@ -1,0 +1,14 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block content %}
+<div class="home-frame">
+    <div class="form-container">
+        <h1 class="form-title">Register</h1>
+        <form action="{% url 'register' %}" method="post" class="styled-form">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn-submit">Register</button>
+        </form>
+    </div>
+</div>
+{% endblock content %}

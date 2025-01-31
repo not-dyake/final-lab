@@ -1,0 +1,19 @@
+{% extends 'app/base.html' %}
+
+{% block content %}
+<div class="home-frame">
+    <div class="form-container">
+        <h2>Are you sure you want to delete {{ object.first_name }} {{ object.last_name }}?</h2>
+        <form method="post">
+            {% csrf_token %}
+            <div class="back">
+                <button class="btn-submit" type="submit">Yes, Delete</button>
+                <a class="btn-submit" href="{% url 'admin_dashboard' %}">Cancel</a>
+            </div>    
+        </form>
+        
+    </div>
+    
+</div>
+
+{% endblock %}
